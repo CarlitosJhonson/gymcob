@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #4b4848ef;
+   
+}
+
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.logo-container img {
+    width: 50px;
+    scale: 3.0;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit; 
+    font-weight: normal;
+    cursor: pointer; 
+}
+
+.nav a:hover {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+.nav li {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.nav li img {
+    height: 40px;
+    width: 40px;
+}
+
+.nav li:hover {
+    color: #ffbd59;
+}
+
+.cta button {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 20px;
+    background-color: #ffbd59;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta button:hover {
+    background-color: #706451;
+}
+
+.membresia{
+    z-index: 1;
+    margin: auto;
+    overflow-x: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.fondo {
+    background: url(fondo.jpeg) center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(40%);
+    z-index: -1;
+   
+}
+
+.detalles-membresia{
+    background: #ffffffef;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0,9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.membresia h1 {
+    padding-top: 25px;
+    color: rgb(218, 217, 217)
+}
+
+.detalles-membresia tbody tr:nth-of-type(even) {
+    background-color: #b8b8b8;
+}
+
+.detalles-membresia thead tr {
+    background-color: #ffbd59;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    padding: 12px 15px;
+}
+
+.detalles-membresia th {
+    padding: 12px 15px;
+}
+
+.detalles-membresia td {
+    padding: 12px 15px;
+}
+
+.detalles-membresia tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.detalles-membresia tbody tr:last-of-type{
+    border-bottom: 2px solid #ffbd59
+}
+
+a.pago button {
+    padding: 10px 20px;
+    background-color: #ffbd59;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px 5px 5px 5px;
+}
+
+a.congelar button {
+    padding: 10px 20px;
+    background-color: #ffbd59;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1f242d;
+    padding: 25px;
+}
+
+.container form {
+    width: 700px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+form .row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.row .column {
+    flex: 1 1 250px;
+}
+
+.column .title {
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.column .input-box {
+    margin: 15px 0;
+}
+
+.input-box span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.column .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.flex .input-box {
+    margin-top: 5px;
+}
+
+.input-box img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+form .btn {
+    width: 100%;
+    padding: 12px;
+    background: #ffbd59;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: .5s;
+    font-family: "Montserrat", sans-serif;
+}
+
+form .btn:hover {
+    background: #ffbd59;
+
+}
+
+.input-box img {
+    scale: 3.0;
+    padding-left: 15px;
+}
